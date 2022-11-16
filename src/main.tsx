@@ -1,4 +1,5 @@
 import "@styles/index.css";
+import "@styles/font.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
