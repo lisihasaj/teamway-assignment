@@ -9,8 +9,8 @@ const firebaseConfig = {
     projectId: "teamway-assignment",
     storageBucket: "teamway-assignment.appspot.com",
     messagingSenderId: "684980048796",
-    appId: "1:684980048796:web:0c479ea3def7441aca2e59",
-    measurementId: "G-SEWRDS07RB",
+    appId: "1:684980048796:web:df6a0f85640b75c5ca2e59",
+    measurementId: "G-XFXV9HS63S",
 };
 
 // Initialize Firebase
