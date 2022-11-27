@@ -1,8 +1,9 @@
 import Routes from "@routes/routes";
 import { db } from "@lib/api/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
+import MainLayout from "@layouts/MainLayout";
 
-const usersCollection = collection(db, "users");
+const usersCollection = collection(db, "surveys");
 async function users() {
     const response = await getDocs(usersCollection);
     return response.docs.map((doc) => {
@@ -15,5 +16,9 @@ export default function App() {
         console.log(data);
     });
 
-    return <Routes />;
+    return (
+        <MainLayout>
+            <Routes />
+        </MainLayout>
+    );
 }
