@@ -1,21 +1,26 @@
 import { RouteObject, useRoutes } from "react-router-dom";
 import { PATHS } from "@routes/paths";
 import Home from "@pages/Home";
-import Test from "@pages/Test";
-import CompletedTest from "@pages/CompletedTest";
+import Survey from "@pages/Survey";
+import CompletedSurvey from "@pages/CompletedSurvey";
+import NotFound from "@pages/NotFound";
 
 const _routes: Array<RouteObject> = [
     {
-        path: PATHS().home,
+        path: PATHS.home,
         element: <Home />,
     },
     {
-        path: PATHS(":testPart").test,
-        element: <Test />,
+        path: PATHS.survey,
+        element: <Survey />,
     },
     {
-        path: PATHS().finishScreen,
-        element: <CompletedTest />,
+        path: PATHS.completedSurvey,
+        element: <CompletedSurvey />,
+    },
+    {
+        path: PATHS.notFound,
+        element: <NotFound />,
     },
 ];
 

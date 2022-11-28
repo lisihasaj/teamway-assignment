@@ -1,0 +1,188 @@
+[
+    {
+        "id": 1,
+        "name": "question1",
+        "label": "You're really busy at work and a colleague is telling you their life story and personal woes. You:",
+        "answers": [
+            {
+                "id": 1,
+                "value": "1",
+                "placeholder": "a",
+                "label": "Don't dare to interrupt them"
+            },
+            {
+                "id": 2,
+                "value": "2",
+                "placeholder": "b",
+                "label": "Think it's more important to give them some of your time; work can wait"
+            },
+            {
+                "id": 3,
+                "value": "3",
+                "placeholder": "c",
+                "label": "Listen, but with only with half an ear"
+            },
+            {
+                "id": 4,
+                "value": "4",
+                "placeholder": "d",
+                "label": "Interrupt and explain that you are really busy at the moment"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "question2",
+        "label": "You've been sitting in the doctor's waiting room for more than 25 minutes. You:",
+        "answers": [
+            {
+                "id": 1,
+                "value": "1",
+                "placeholder": "a",
+                "label": "Look at your watch every two minutes"
+            },
+            {
+                "id": 2,
+                "value": "2",
+                "placeholder": "b",
+                "label": "Bubble with inner anger, but keep quiet"
+            },
+            {
+                "id": 3,
+                "value": "3",
+                "placeholder": "c",
+                "label": "Explain to other equally impatient people in the room that the doctor is always running late"
+            },
+            {
+                "id": 4,
+                "value": "4",
+                "placeholder": "d",
+                "label": "Complain in a loud voice, while tapping your foot impatiently"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "question3",
+        "label": "You're having an animated discussion with a colleague regarding a project that you're in charge of. You:",
+        "answers": [
+            {
+                "id": 1,
+                "value": "1",
+                "placeholder": "a",
+                "label": "Don't dare contradict them"
+            },
+            {
+                "id": 2,
+                "value": "2",
+                "placeholder": "b",
+                "label": "Think that they are obviously right"
+            },
+            {
+                "id": 3,
+                "value": "3",
+                "placeholder": "c",
+                "label": "Defend your own point of view, tooth and nail"
+            },
+            {
+                "id": 4,
+                "value": "4",
+                "placeholder": "d",
+                "label": "Continuously interrupt your colleague"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "question4",
+        "label": "You are taking part in a guided tour of a museum. You:",
+        "answers": [
+            {
+                "id": 1,
+                "value": "1",
+                "placeholder": "a",
+                "label": "Are a bit too far towards the back so don't really hear what the guide is saying"
+            },
+            {
+                "id": 2,
+                "value": "2",
+                "placeholder": "b",
+                "label": "Follow the group without question"
+            },
+            {
+                "id": 3,
+                "value": "3",
+                "placeholder": "c",
+                "label": "Make sure that everyone is able to hear properly"
+            },
+            {
+                "id": 4,
+                "value": "4",
+                "placeholder": "d",
+                "label": "Are right up the front, adding your own comments in a loud voice"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "question5",
+        "label": "During dinner parties at your home, you have a hard time with people who:",
+        "answers": [
+            {
+                "id": 1,
+                "value": "1",
+                "placeholder": "a",
+                "label": "Ask you to tell a story in front of everyone else"
+            },
+            {
+                "id": 2,
+                "value": "2",
+                "placeholder": "b",
+                "label": "Talk privately between themselves"
+            },
+            {
+                "id": 3,
+                "value": "3",
+                "placeholder": "c",
+                "label": "Hang around you all evening"
+            },
+            {
+                "id": 4,
+                "value": "4",
+                "placeholder": "d",
+                "label": "Always drag the conversation back to themselves"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "question6",
+        "label": "You crack a joke at work, but nobody seems to have noticed. You:",
+        "answers": [
+            {
+                "id": 1,
+                "value": "1",
+                "placeholder": "a",
+                "label": "Think it's for the best — it was a lame joke anyway"
+            },
+            {
+                "id": 2,
+                "value": "2",
+                "placeholder": "b",
+                "label": "Wait to share it with your friends after work"
+            },
+            {
+                "id": 3,
+                "value": "3",
+                "placeholder": "c",
+                "label": "Try again a bit later with one of your colleagues"
+            },
+            {
+                "id": 4,
+                "value": "4",
+                "placeholder": "d",
+                "label": "Keep telling it until they pay attention"
+            }
+        ]
+    }
+]

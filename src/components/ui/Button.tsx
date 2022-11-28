@@ -5,6 +5,7 @@ import LoadingSpinner from "@components/ui/LoadingSpinner";
 
 interface Props extends PropsWithChildren {
     type?: "submit" | "button" | "reset";
+    color?: "black" | "indigo";
     style?: CSSProperties;
     className?: string;
     processing?: boolean;
@@ -21,8 +22,14 @@ export default function Button(props: Props) {
             type={props.type}
             tabIndex={props.tabIndex}
             className={cn(
-                "group flex flex-row justify-center items-center py-[10px] px-[35px] w-fit h-fit rounded-xl text-[14px] font-semibold outline-blue transition ease-in-out duration-150 tracking-wide enabled:bg-black border-2 enabled:border-black enabled:hover:bg-gray-700 enabled:hover:border-gray-700 shadow-sm text-white enabled:focus:bg-gray-700 enabled:focus:border-gray-700",
+                "group flex flex-row justify-center items-center py-[8px] px-[35px] w-fit h-fit rounded-xl text-[14px] font-semibold outline-blue transition ease-in-out duration-150 tracking-wide border-2 text-white shadow-sm disabled:bg-gray-500 disabled:border-gray-500",
                 props.className,
+                {
+                    "enabled:border-black enabled:bg-black enabled:hover:bg-gray-700 enabled:hover:border-gray-700 enabled:focus:bg-gray-700 enabled:focus:border-gray-700":
+                        props.color === "black" || !props.color,
+                    "enabled:border-indigo-600 enabled:bg-indigo-600 enabled:hover:bg-indigo-500 enabled:hover:border-indigo-500 enabled:focus:bg-indigo-500 enabled:focus:border-indigo-500":
+                        props.color === "indigo",
+                },
             )}
             disabled={props.disabled}
             style={props.style}
