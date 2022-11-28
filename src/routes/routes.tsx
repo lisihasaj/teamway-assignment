@@ -7,19 +7,19 @@ import NotFound from "@pages/NotFound";
 
 const _routes: Array<RouteObject> = [
     {
-        path: PATHS.home,
+        path: PATHS().home,
         element: <Home />,
     },
     {
-        path: PATHS.survey,
+        path: PATHS().survey,
         element: <Survey />,
     },
     {
-        path: PATHS.completedSurvey,
+        path: PATHS(":resultId").completedSurvey,
         element: <CompletedSurvey />,
     },
     {
-        path: PATHS.notFound,
+        path: PATHS().notFound,
         element: <NotFound />,
     },
 ];

@@ -16,7 +16,7 @@ export default function Home() {
                     and get your results in the end.
                 </span>
             </div>
-            <Button arrow className="my-6" onClick={() => push(PATHS.survey)}>
+            <Button arrow className="my-6" onClick={() => push(PATHS().survey)}>
                 Start the survey
             </Button>
         </div>

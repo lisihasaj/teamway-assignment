@@ -48,11 +48,6 @@ export default function Survey() {
         );
     }, [queryParams.get("question")]);
 
-    const handleSubmit = methods.handleSubmit((data: SurveyValues) => {
-        console.log(data);
-        push(PATHS.completedSurvey);
-    });
-
     //Handle question answering up to the last index of "survey" array
     const handleSurvey = () => {
         //Get the updated values
@@ -78,7 +73,10 @@ export default function Survey() {
             //Fake loading
             setTimeout(() => {
                 setLoading(false);
-                handleSubmit();
+                push(
+                    PATHS(String(Math.floor(Math.random() * 2)))
+                        .completedSurvey,
+                );
             }, 1000);
         }
     };
@@ -94,7 +92,7 @@ export default function Survey() {
         }
 
         if (typeof currentQuestion === "undefined") {
-            push(PATHS.notFound);
+            push(PATHS().notFound);
         }
     }, []);
 
@@ -126,7 +124,7 @@ export default function Survey() {
                         }
                     >
                         {Number(queryParams.get("question")) === survey.length
-                            ? "Submit"
+                            ? "Finish test"
                             : "Next question"}
                     </Button>
                 </div>
