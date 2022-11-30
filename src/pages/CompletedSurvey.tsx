@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { PATHS } from "@routes/paths";
+import cn from "classnames";
 import results from "@lib/results.json";
 import Button from "@components/ui/Button";
 
@@ -25,7 +26,12 @@ export default function CompletedSurvey() {
             </span>
             {(results as Result)[resultId!] && (
                 <div className="w-full flex flex-col">
-                    <span className="text-[2em] font-semibold text-center mb-5">
+                    <span
+                        className={cn(
+                            "md:text-[2em]",
+                            "text-[1.4em] font-semibold text-center mb-5",
+                        )}
+                    >
                         {(results as Result)[resultId!].title}
                     </span>
                     <span className="w-full max-h-[21rem] overflow-y-auto text-md text-gray-500 px-2">

@@ -22,7 +22,8 @@ export default function Button(props: Props) {
             type={props.type}
             tabIndex={props.tabIndex}
             className={cn(
-                "group flex flex-row justify-center items-center py-[8px] px-[35px] w-fit h-fit rounded-xl text-[14px] font-semibold outline-blue transition ease-in-out duration-150 tracking-wide border-2 text-white shadow-sm disabled:bg-gray-500 disabled:border-gray-500",
+                "md:py-[8px] md:px-[35px] md:text-[14px] md:rounded-xl",
+                "group flex flex-row justify-center items-center py-[5px] px-[25px] w-fit h-fit rounded-lg text-[13px] font-semibold outline-blue transition ease-in-out duration-150 tracking-wide border-2 text-white shadow-sm disabled:bg-gray-500 disabled:border-gray-500",
                 props.className,
                 {
                     "enabled:border-black enabled:bg-black enabled:hover:bg-gray-700 enabled:hover:border-gray-700 enabled:focus:bg-gray-700 enabled:focus:border-gray-700":
