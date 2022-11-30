@@ -1,14 +1,20 @@
 import { ArrowLeft } from "@components/shapes/SvgIcons";
 import { Link } from "react-router-dom";
 import { PATHS } from "@routes/paths";
+import cn from "classnames";
 import NotFoundImg from "@assets/images/not-found.png";
 
 export default function NotFound() {
     return (
         <div className="w-full">
             <div className="w-full flex flex-col items-center">
-                <img src={NotFoundImg} className="w-[30%] h-auto" alt="" />
-                <span className="text-[2rem] font-semibold">
+                <img src={NotFoundImg} className="w-[30%] h-auto mb-3" alt="" />
+                <span
+                    className={cn(
+                        "md:text-[2rem]",
+                        "text-[1.4rem] text-center font-semibold",
+                    )}
+                >
                     Page not found!
                 </span>
             </div>

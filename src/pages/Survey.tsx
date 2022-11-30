@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { PATHS } from "@routes/paths";
+import cn from "classnames";
 import Question from "@components/survey/Question";
 import Button from "@components/ui/Button";
 import survey from "@lib/survey.json";
@@ -102,7 +103,9 @@ export default function Survey() {
                 {`${currentQuestion?.id}/${survey.length}`}
             </span>
             <div className="w-full flex flex-col">
-                <span className="text-xl font-semibold mb-5">
+                <span
+                    className={cn("md:text-xl", "text-lg font-semibold mb-5")}
+                >
                     {currentQuestion?.label}
                 </span>
                 {currentQuestion && (
